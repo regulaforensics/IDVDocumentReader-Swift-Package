@@ -12,11 +12,11 @@ let package = Package(
             targets: ["\(packageName)Common"]),
     ],
     dependencies: [
-        .package(name: "IDVModule", url: "https://github.com/regulaforensics/IDVModule-Swift-Package.git", .exact(Version(stringLiteral: "0.1.118"))),
-        .package(name: "DocumentReader", url: "https://github.com/regulaforensics/DocumentReader-Swift-Package.git", .exact(Version(stringLiteral: "7.6.4456"))),
+        .package(name: "IDVModule", url: "https://github.com/regulaforensics/IDVModule-Swift-Package.git", .exact(Version(stringLiteral: "2.5.539"))),
+        .package(name: "DocumentReader", url: "https://github.com/regulaforensics/DocumentReader-Swift-Package.git", .exact(Version(stringLiteral: "8.1.4772"))),
     ],
     targets: [
-        .binaryTarget(name: "IDVDocumentReader", url: "https://pods.regulaforensics.com/IDVDocumentReader/2.3.339/IDVDocumentReader-2.3.339.zip", checksum: "329e45f153432cd7dec7643434f654a476d3d0da2e474b35b62ec4439973bb77"),
+        .binaryTarget(name: "IDVDocumentReader", url: "https://pods.regulaforensics.com/IDVDocumentReader/2.5.779/IDVDocumentReader-2.5.779.zip", checksum: "3dcd16b8246f7121163d60412f8f65e132ddb740741c8b9c836f084545fcd994"),
         .target(
             name: "\(packageName)Common",
             dependencies: [
