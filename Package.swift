@@ -4,23 +4,36 @@ import PackageDescription
 let packageName = "IDVDocumentReader"
 
 let package = Package(
-    name: "IDVDocumentReader",
-    platforms: [.iOS(.v13)],
+    name: packageName,
+    platforms: [.iOS(.v14)],
     products: [
         .library(
-            name: "IDVDocumentReader",
-            targets: ["\(packageName)Common"]),
+            name: packageName,
+            targets: ["\(packageName)Common"]
+        ),
     ],
     dependencies: [
-        .package(name: "IDVModule", url: "https://github.com/regulaforensics/IDVModule-Swift-Package.git", .exact(Version(stringLiteral: "2.5.539"))),
-        .package(name: "DocumentReader", url: "https://github.com/regulaforensics/DocumentReader-Swift-Package.git", .exact(Version(stringLiteral: "8.1.4772"))),
+        .package(
+            name: "IDVModule",
+            url: "https://github.com/regulaforensics/IDVModule-Swift-Package.git",
+            .exact(Version(stringLiteral: "3.1.1203"))
+        ),
+        .package(
+            name: "DocumentReader",
+            url: "https://github.com/regulaforensics/DocumentReader-Swift-Package.git",
+            .exact(Version(stringLiteral: "8.2.5052"))
+        ),
     ],
     targets: [
-        .binaryTarget(name: "IDVDocumentReader", url: "https://pods.regulaforensics.com/IDVDocumentReader/2.5.779/IDVDocumentReader-2.5.779.zip", checksum: "3dcd16b8246f7121163d60412f8f65e132ddb740741c8b9c836f084545fcd994"),
+        .binaryTarget(
+            name: packageName,
+            url: "https://pods.regulaforensics.com/\(packageName)/3.1.1732/\(packageName)-3.1.1732.zip",
+            checksum: "12f1213a860f15f5af88522b107606178c6f7490a4921efbaaa136e6c776e85a"
+        ),
         .target(
             name: "\(packageName)Common",
             dependencies: [
-                .target(name: "IDVDocumentReader"),
+                .target(name: packageName),
                 .product(name: "IDVModule", package: "IDVModule"),
                 .product(name: "DocumentReader", package: "DocumentReader")
             ],
