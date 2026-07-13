@@ -18,19 +18,19 @@ let package = Package(
         .package(
             name: "IDVModule",
             url: "https://github.com/regulaforensics/IDVModule-Swift-Package.git",
-            from: "3.6.1740"
+            from: "3.8.1846"
         ),
         .package(
             name: "DocumentReader",
             url: "https://github.com/regulaforensics/DocumentReader-Swift-Package.git",
-            from: "9.3.6250"
+            from: "9.6.6619"
         ),
     ],
     targets: [
         .binaryTarget(
             name: packageName,
-            url: "https://pods.regulaforensics.com/\(packageName)/3.6.3109/\(packageName)-3.6.3109.zip",
-            checksum: "4c1d272081bf0beb8825ae7d696a07a8ca50a0cf850edd6af6a749e9f6d66e35"
+            url: "https://pods.regulaforensics.com/\(packageName)/3.8.3460/\(packageName)-3.8.3460.zip",
+            checksum: "819e22537dafc757a580084b55048fab002d80cae8d482b158dc67824343fd62"
         ),
         .target(
             name: "\(packageName)Common",

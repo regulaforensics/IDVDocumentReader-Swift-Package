@@ -99,6 +99,25 @@ https://github.com/regulaforensics/IDVDocumentReader-Swift-Package
 
 5. Click Add Package.
 
+6. Now add the Core package by performing steps 2-5 again for one URL from the list:
+
+```
+https://github.com/regulaforensics/DocumentReaderFullRFID-Swift-Package
+https://github.com/regulaforensics/DocumentReaderFull-Swift-Package
+https://github.com/regulaforensics/DocumentReaderOCR-Swift-Package
+https://github.com/regulaforensics/DocumentReaderMRZ-Swift-Package
+https://github.com/regulaforensics/DocumentReaderBarcode-Swift-Package
+https://github.com/regulaforensics/DocumentReaderFullAuthRFID-Swift-Package
+https://github.com/regulaforensics/DocumentReaderMRZBarcode-Swift-Package
+https://github.com/regulaforensics/DocumentReaderMRZRFID-Swift-Package
+https://github.com/regulaforensics/DocumentReaderDocType-Swift-Package
+https://github.com/regulaforensics/DocumentReaderOCRRFID-Swift-Package
+https://github.com/regulaforensics/DocumentReaderBarcodeMRZRFID-Swift-Package
+https://github.com/regulaforensics/DocumentReaderFullAuth-Swift-Package
+https://github.com/regulaforensics/DocumentReaderBounds-Swift-Package
+https://github.com/regulaforensics/DocumentReaderRFID-Swift-Package
+```
+
 Once you're finished, Xcode will begin downloading and resolving dependencies.
 
 ## Additional setup:
