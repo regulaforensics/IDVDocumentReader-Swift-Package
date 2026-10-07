@@ -1,12 +1,13 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.5
 import PackageDescription
 
 let packageName = "IDVDocumentReader"
+let binaryTargetName = "IDVDocumentReaderStage"
 
 let package = Package(
     name: packageName,
     platforms: [
-        .iOS(.v14)
+        .iOS(.v15)
     ],
     products: [
         .library(
@@ -18,24 +19,24 @@ let package = Package(
         .package(
             name: "IDVModule",
             url: "https://github.com/regulaforensics/IDVModule-Swift-Package.git",
-            from: "3.9.1898"
+            from: "3.10.2026-rc"
         ),
         .package(
             name: "DocumentReader",
             url: "https://github.com/regulaforensics/DocumentReader-Swift-Package.git",
-            from: "9.7.6817"
+            from: "9.8.6944-rc"
         ),
     ],
     targets: [
         .binaryTarget(
-            name: packageName,
-            url: "https://pods.regulaforensics.com/\(packageName)/3.9.3606/\(packageName)-3.9.3606.zip",
-            checksum: "c0007befcc2a43cda0ea75743e6e9be23d20b37347d85f7ba5592bbd4180bd46"
+            name: binaryTargetName,
+            url: "https://pods.regulaforensics.com/Stage/IDVDocumentReaderStage/3.10.3973/IDVDocumentReaderStage-3.10.3973.zip",
+            checksum: "a8503735287f68fcef344e1afc376cf47dfa3391e7e186e22dc7de915e378922"
         ),
         .target(
             name: "\(packageName)Common",
             dependencies: [
-                .target(name: packageName),
+                .target(name: binaryTargetName),
                 .product(name: "IDVModule", package: "IDVModule"),
                 .product(name: "DocumentReader", package: "DocumentReader")
             ],

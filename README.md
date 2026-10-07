@@ -10,7 +10,7 @@ This guide provides step-by-step instructions on integrating the **IDV DocumentR
 
 Before integrating the SDK, ensure the following:
 
-- The application Minimum Deployment Target is **iOS 14** and above.
+- The application Minimum Deployment Target is **iOS 15** and above.
 - Camera permission enabled
 - Optional: The Near Field Communication Tag Reading capability is enabled in the application target.
 
