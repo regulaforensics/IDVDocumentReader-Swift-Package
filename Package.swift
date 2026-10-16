@@ -2,7 +2,7 @@
 import PackageDescription
 
 let packageName = "IDVDocumentReader"
-let binaryTargetName = "IDVDocumentReaderStage"
+let binaryTargetName = "IDVDocumentReaderNightly"
 
 let package = Package(
     name: packageName,
@@ -19,19 +19,19 @@ let package = Package(
         .package(
             name: "IDVModule",
             url: "https://github.com/regulaforensics/IDVModule-Swift-Package.git",
-            from: "3.10.2048-rc"
+            from: "3.10.2049-nightly"
         ),
         .package(
             name: "DocumentReader",
             url: "https://github.com/regulaforensics/DocumentReader-Swift-Package.git",
-            from: "9.9.7126-rc"
+            from: "9.10.7172-nightly"
         ),
     ],
     targets: [
         .binaryTarget(
             name: binaryTargetName,
-            url: "https://pods.regulaforensics.com/Stage/IDVDocumentReaderStage/3.10.4022/IDVDocumentReaderStage-3.10.4022.zip",
-            checksum: "abada8233964570f95fb391eaa31acc866bf64ef26e401cda8a0c8359c077ac8"
+            url: "https://pods.regulaforensics.com/Nightly/IDVDocumentReaderNightly/3.10.4023/IDVDocumentReaderNightly-3.10.4023.zip",
+            checksum: "fb716290b1aa1d44080e0e688d0d9ca9e26bb125dce9ac7c02ccead0302070c4"
         ),
         .target(
             name: "\(packageName)Common",
